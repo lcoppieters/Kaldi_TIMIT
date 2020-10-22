@@ -1,0 +1,7 @@
+# Running on lentix05
+# Started at Mon Oct 19 21:08:15 CEST 2020
+# convert-ali exp/tri2_ali/final.mdl exp/tri3/1.mdl exp/tri3/tree "ark:gunzip -c exp/tri2_ali/ali.25.gz|" "ark:|gzip -c >exp/tri3/ali.25.gz" 
+convert-ali exp/tri2_ali/final.mdl exp/tri3/1.mdl exp/tri3/tree 'ark:gunzip -c exp/tri2_ali/ali.25.gz|' 'ark:|gzip -c >exp/tri3/ali.25.gz' 
+LOG (convert-ali[5.5.810~1-76a979]:main():convert-ali.cc:120) Succeeded converting alignments for 120 files, failed for 0
+# Accounting: time=0 threads=1
+# Finished at Mon Oct 19 21:08:15 CEST 2020 with status 0

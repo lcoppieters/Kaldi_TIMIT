@@ -1,0 +1,15 @@
+msat1 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:98251
+msdb0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:98496
+msdh0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:98741
+msds0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:98986
+msem1 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:99231
+mses0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:99476
+msfh0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:99721
+msfv0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:99966
+msjk0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:100211
+msmc0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:100456
+msmr0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:100701
+msms0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:100946
+msrg0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:101191
+msrr0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:101436
+mstf0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_train.ark:101681

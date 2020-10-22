@@ -1,0 +1,16 @@
+fmgd0_si1564 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr6/fmgd0/si1564.wav |
+fmgd0_si2194 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr6/fmgd0/si2194.wav |
+fmgd0_si934 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr6/fmgd0/si934.wav |
+fmgd0_sx124 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr6/fmgd0/sx124.wav |
+fmgd0_sx214 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr6/fmgd0/sx214.wav |
+fmgd0_sx304 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr6/fmgd0/sx304.wav |
+fmgd0_sx34 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr6/fmgd0/sx34.wav |
+fmgd0_sx394 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr6/fmgd0/sx394.wav |
+fmld0_si2185 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr8/fmld0/si2185.wav |
+fmld0_si822 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr8/fmld0/si822.wav |
+fmld0_si925 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr8/fmld0/si925.wav |
+fmld0_sx115 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr8/fmld0/sx115.wav |
+fmld0_sx205 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr8/fmld0/sx205.wav |
+fmld0_sx25 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr8/fmld0/sx25.wav |
+fmld0_sx295 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr8/fmld0/sx295.wav |
+fmld0_sx385 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr8/fmld0/sx385.wav |

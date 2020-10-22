@@ -1,0 +1,7 @@
+# Running on vgnd008
+# Started at Tue Oct 20 10:04:44 CEST 2020
+# ali-to-phones --per-frame=true exp/tri3/decode_test.si/../final.mdl "ark:gunzip -c exp/tri3/decode_test.si/ali_tmp.*.gz|" "ark,t:|gzip -c >exp/tri3/decode_test.si/ali_frame_tmp.gz" 
+ali-to-phones --per-frame=true exp/tri3/decode_test.si/../final.mdl 'ark:gunzip -c exp/tri3/decode_test.si/ali_tmp.*.gz|' 'ark,t:|gzip -c >exp/tri3/decode_test.si/ali_frame_tmp.gz' 
+LOG (ali-to-phones[5.5.810~1-76a979]:main():ali-to-phones.cc:134) Done 192 utterances.
+# Accounting: time=1 threads=1
+# Finished at Tue Oct 20 10:04:45 CEST 2020 with status 0

@@ -1,0 +1,5 @@
+ERROR: Output of qsub was: Unable to run job: job rejected: no project assigned to job
+SOLUTION: -P parol
+
+ERROR: queue.pl: Command line option mem not described in default config file (or value '4G' not allowed)
+SOLUTION: 

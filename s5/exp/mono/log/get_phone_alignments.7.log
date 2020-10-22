@@ -1,0 +1,7 @@
+# Running on vcn03001
+# Started at Mon Oct 19 16:25:23 CEST 2020
+# set -o pipefail && ali-to-phones --write-lengths=true exp/mono/final.mdl "ark:gunzip -c exp/mono/ali.7.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " ; if (NF>1) print "end " ; for (n=1;n<=NF;n++) print "all " ; }' | sort | uniq -c | gzip -c > exp/mono/phone_stats.7.gz 
+ali-to-phones --write-lengths=true exp/mono/final.mdl 'ark:gunzip -c exp/mono/ali.7.gz|' ark,t:- 
+LOG (ali-to-phones[5.5.810~1-76a979]:main():ali-to-phones.cc:134) Done 120 utterances.
+# Accounting: time=1 threads=1
+# Finished at Mon Oct 19 16:25:24 CEST 2020 with status 0

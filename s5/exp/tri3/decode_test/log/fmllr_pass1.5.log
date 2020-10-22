@@ -1,0 +1,41 @@
+# Running on vgnd001
+# Started at Tue Oct 20 10:08:44 CEST 2020
+# gunzip -c exp/tri3/decode_test.si/lat.5.gz | lattice-to-post --acoustic-scale=0.083333 ark:- ark:- | weight-silence-post 0.01 1 exp/tri3/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split5/5/utt2spk scp:data/test/split5/5/cmvn.scp scp:data/test/split5/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/test/split5/5/spk2utt exp/tri3/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split5/5/utt2spk scp:data/test/split5/5/cmvn.scp scp:data/test/split5/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3/decode_test/pre_trans.5 
+weight-silence-post 0.01 1 exp/tri3/final.alimdl ark:- ark:- 
+gmm-post-to-gpost exp/tri3/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split5/5/utt2spk scp:data/test/split5/5/cmvn.scp scp:data/test/split5/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3/final.mat ark:- ark:- |' ark:- ark:- 
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/test/split5/5/spk2utt exp/tri3/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split5/5/utt2spk scp:data/test/split5/5/cmvn.scp scp:data/test/split5/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3/decode_test/pre_trans.5 
+transform-feats exp/tri3/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split5/5/utt2spk scp:data/test/split5/5/cmvn.scp scp:data/test/split5/5/feats.scp ark:- 
+apply-cmvn --utt2spk=ark:data/test/split5/5/utt2spk scp:data/test/split5/5/cmvn.scp scp:data/test/split5/5/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri3/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+lattice-to-post --acoustic-scale=0.083333 ark:- ark:- 
+LOG (gmm-est-fmllr-gpost[5.5.810~1-76a979]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.72863 per frame over 2157.47 frames.
+LOG (gmm-est-fmllr-gpost[5.5.810~1-76a979]:main():gmm-est-fmllr-gpost.cc:141) For speaker mtas1, auxf-impr from fMLLR is 4.72863, over 2157.47 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.810~1-76a979]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.40249 per frame over 2152.13 frames.
+LOG (gmm-est-fmllr-gpost[5.5.810~1-76a979]:main():gmm-est-fmllr-gpost.cc:141) For speaker mtls0, auxf-impr from fMLLR is 4.40249, over 2152.13 frames.
+
+LOG (lattice-to-post[5.5.810~1-76a979]:main():lattice-to-post.cc:106) Overall average log-like/frame is -4.38038 over 9592 frames.  Average acoustic like/frame is -4.04671
+LOG (lattice-to-post[5.5.810~1-76a979]:main():lattice-to-post.cc:110) Done 32 lattices.
+LOG (apply-cmvn[5.5.810~1-76a979]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 32 utterances, errors on 0
+LOG (gmm-est-fmllr-gpost[5.5.810~1-76a979]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.9681 per frame over 2437.71 frames.
+LOG (gmm-est-fmllr-gpost[5.5.810~1-76a979]:main():gmm-est-fmllr-gpost.cc:141) For speaker mwbt0, auxf-impr from fMLLR is 6.9681, over 2437.71 frames.
+
+LOG (apply-cmvn[5.5.810~1-76a979]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 32 utterances, errors on 0
+LOG (weight-silence-post[5.5.810~1-76a979]:main():weight-silence-post.cc:95) Done 32 posteriors.
+LOG (transform-feats[5.5.810~1-76a979]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.5527 over 9592 frames.
+LOG (transform-feats[5.5.810~1-76a979]:main():transform-feats.cc:161) Applied transform to 32 utterances; 0 had errors.
+LOG (transform-feats[5.5.810~1-76a979]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.5527 over 9592 frames.
+LOG (transform-feats[5.5.810~1-76a979]:main():transform-feats.cc:161) Applied transform to 32 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.5.810~1-76a979]:main():gmm-post-to-gpost.cc:124) Done 32 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.5.810~1-76a979]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -48.7963 over 8799.19 frames.
+LOG (gmm-post-to-gpost[5.5.810~1-76a979]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (gmm-est-fmllr-gpost[5.5.810~1-76a979]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 7.04538 per frame over 2051.88 frames.
+LOG (gmm-est-fmllr-gpost[5.5.810~1-76a979]:main():gmm-est-fmllr-gpost.cc:141) For speaker mwew0, auxf-impr from fMLLR is 7.04538, over 2051.88 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.810~1-76a979]:main():gmm-est-fmllr-gpost.cc:186) Done 32 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.5.810~1-76a979]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 5.80952 over 8799.19 frames.
+# Accounting: time=2 threads=1
+# Finished at Tue Oct 20 10:08:46 CEST 2020 with status 0

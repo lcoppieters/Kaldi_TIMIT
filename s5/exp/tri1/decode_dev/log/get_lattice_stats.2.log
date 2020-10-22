@@ -1,0 +1,9 @@
+# Running on jurasix12
+# Started at Mon Oct 19 19:18:44 CEST 2020
+# ali-to-phones --write-lengths=true exp/tri1/decode_dev/../final.mdl "ark:gunzip -c exp/tri1/decode_dev/ali_tmp.2.gz|" ark,t:- | perl -ne 'chomp;s/^\S+\s*//;@a=split /\s;\s/, # ;{"begin ".[/idiap/resource/software/sge/8.1.9.si/grid/spool/jurasix12/job_scripts/5273620]."\n"}++;
+  if(@a>1){{"end ".[-1]."\n"}++;}for(=0;<@a;++){{"all ".[]."\n"}++;}
+  END{for  (sort keys %count){print "{} "}}' | gzip -c > exp/tri1/decode_dev/phone_stats.2.gz 
+ali-to-phones --write-lengths=true exp/tri1/decode_dev/../final.mdl 'ark:gunzip -c exp/tri1/decode_dev/ali_tmp.2.gz|' ark,t:- 
+LOG (ali-to-phones[5.5.810~1-76a979]:main():ali-to-phones.cc:134) Done 80 utterances.
+# Accounting: time=0 threads=1
+# Finished at Mon Oct 19 19:18:44 CEST 2020 with status 0

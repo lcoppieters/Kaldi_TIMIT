@@ -1,0 +1,8 @@
+mgrt0_si1450 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr7/mgrt0/si1450.wav |
+mgrt0_si2080 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr7/mgrt0/si2080.wav |
+mgrt0_si820 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr7/mgrt0/si820.wav |
+mgrt0_sx10 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr7/mgrt0/sx10.wav |
+mgrt0_sx100 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr7/mgrt0/sx100.wav |
+mgrt0_sx190 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr7/mgrt0/sx190.wav |
+mgrt0_sx280 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr7/mgrt0/sx280.wav |
+mgrt0_sx370 /idiap/user/lcoppieters/kaldi/tools/sph2pipe_v2.5/sph2pipe -f wav /idiap/resource/database/timit/timit/test/dr7/mgrt0/sx370.wav |

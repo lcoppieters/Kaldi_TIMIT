@@ -1,0 +1,17 @@
+# Running on jurasix15
+# Started at Mon Oct 19 20:05:45 CEST 2020
+# gmm-acc-stats-ali exp/tri2/5.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split30/28/utt2spk scp:data/train/split30/28/cmvn.scp scp:data/train/split30/28/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2/4.mat ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri2/ali.28.gz|" exp/tri2/5.28.acc 
+gmm-acc-stats-ali exp/tri2/5.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split30/28/utt2spk scp:data/train/split30/28/cmvn.scp scp:data/train/split30/28/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2/4.mat ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri2/ali.28.gz|' exp/tri2/5.28.acc 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri2/4.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split30/28/utt2spk scp:data/train/split30/28/cmvn.scp scp:data/train/split30/28/feats.scp ark:- 
+LOG (gmm-acc-stats-ali[5.5.810~1-76a979]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance mtcs0_si2265 avg. like is -46.8214 over 155 frames.
+LOG (gmm-acc-stats-ali[5.5.810~1-76a979]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance mtjs0_sx112 avg. like is -52.8187 over 333 frames.
+LOG (apply-cmvn[5.5.810~1-76a979]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 128 utterances, errors on 0
+LOG (transform-feats[5.5.810~1-76a979]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -89.236 over 40596 frames.
+LOG (transform-feats[5.5.810~1-76a979]:main():transform-feats.cc:161) Applied transform to 128 utterances; 0 had errors.
+LOG (gmm-acc-stats-ali[5.5.810~1-76a979]:main():gmm-acc-stats-ali.cc:112) Done 128 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.810~1-76a979]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -51.2697 over 40596 frames.
+LOG (gmm-acc-stats-ali[5.5.810~1-76a979]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=0 threads=1
+# Finished at Mon Oct 19 20:05:45 CEST 2020 with status 0

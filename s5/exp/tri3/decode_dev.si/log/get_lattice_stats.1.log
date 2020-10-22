@@ -1,0 +1,9 @@
+# Running on vgnd008
+# Started at Tue Oct 20 09:50:29 CEST 2020
+# ali-to-phones --write-lengths=true exp/tri3/decode_dev.si/../final.mdl "ark:gunzip -c exp/tri3/decode_dev.si/ali_tmp.1.gz|" ark,t:- | perl -ne 'chomp;s/^\S+\s*//;@a=split /\s;\s/, # ;{"begin ".[/idiap/resource/software/sge/8.1.9.si/grid/spool/vgnd008/job_scripts/5280129]."\n"}++;
+  if(@a>1){{"end ".[-1]."\n"}++;}for(=0;<@a;++){{"all ".[]."\n"}++;}
+  END{for  (sort keys %count){print "{} "}}' | gzip -c > exp/tri3/decode_dev.si/phone_stats.1.gz 
+ali-to-phones --write-lengths=true exp/tri3/decode_dev.si/../final.mdl 'ark:gunzip -c exp/tri3/decode_dev.si/ali_tmp.1.gz|' ark,t:- 
+LOG (ali-to-phones[5.5.810~1-76a979]:main():ali-to-phones.cc:134) Done 80 utterances.
+# Accounting: time=1 threads=1
+# Finished at Tue Oct 20 09:50:30 CEST 2020 with status 0

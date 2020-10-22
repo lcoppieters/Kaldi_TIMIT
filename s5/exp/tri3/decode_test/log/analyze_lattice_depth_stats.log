@@ -1,0 +1,9 @@
+# Running on vgnd016
+# Started at Tue Oct 20 10:10:59 CEST 2020
+# gunzip -c exp/tri3/decode_test/depth_tmp.*.gz | steps/diagnostic/analyze_lattice_depth_stats.py exp/tri3/graph exp/tri3/decode_test/ali_frame_tmp.gz 
+Traceback (most recent call last):
+  File "steps/diagnostic/analyze_lattice_depth_stats.py", line 92, in <module>
+    uttid, ali = line.split(" ", 1)
+TypeError: a bytes-like object is required, not 'str'
+# Accounting: time=1 threads=1
+# Finished at Tue Oct 20 10:11:00 CEST 2020 with status 1

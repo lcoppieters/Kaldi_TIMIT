@@ -1,0 +1,9 @@
+# Running on vgnd015
+# Started at Tue Oct 20 10:39:50 CEST 2020
+# gunzip -c exp/tri2/decode_dev/depth_tmp.*.gz | steps/diagnostic/analyze_lattice_depth_stats.py exp/tri2/graph exp/tri2/decode_dev/ali_frame_tmp.gz 
+usage: analyze_lattice_depth_stats.py [-h]
+                                      [--frequency-cutoff-percentage FREQUENCY_CUTOFF_PERCENTAGE]
+                                      lang
+analyze_lattice_depth_stats.py: error: unrecognized arguments: exp/tri2/decode_dev/ali_frame_tmp.gz
+# Accounting: time=1 threads=1
+# Finished at Tue Oct 20 10:39:51 CEST 2020 with status 2

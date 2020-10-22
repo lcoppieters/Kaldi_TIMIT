@@ -1,0 +1,5 @@
+mklt0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_test.ark:3681
+mlll0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_test.ark:3926
+mlnt0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_test.ark:4171
+mnjm0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_test.ark:4416
+mpam0 /idiap/user/lcoppieters/kaldi/egs/timit/s5/mfcc/cmvn_test.ark:4661

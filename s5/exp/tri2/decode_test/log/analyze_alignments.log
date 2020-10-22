@@ -1,0 +1,9 @@
+# Running on vgnd010
+# Started at Tue Oct 20 10:46:05 CEST 2020
+# gunzip -c exp/tri2/decode_test/phone_stats.*.gz | steps/diagnostic/analyze_phone_length_stats.py exp/tri2/graph 
+Traceback (most recent call last):
+  File "steps/diagnostic/analyze_phone_length_stats.py", line 179, in <module>
+    assert num_utterances > 0
+AssertionError
+# Accounting: time=1 threads=1
+# Finished at Tue Oct 20 10:46:06 CEST 2020 with status 1

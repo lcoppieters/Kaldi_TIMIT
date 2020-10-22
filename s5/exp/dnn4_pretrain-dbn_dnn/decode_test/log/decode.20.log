@@ -1,0 +1,20 @@
+# nnet-forward --no-softmax=true --prior-scale=1.0 --feature-transform=exp/dnn4_pretrain-dbn_dnn/final.feature_transform --class-frame-counts=exp/dnn4_pretrain-dbn_dnn/ali_train_pdf.counts --use-gpu=no exp/dnn4_pretrain-dbn_dnn/final.nnet "ark,s,cs:copy-feats scp:data-fmllr-tri3/test/split20/20/feats.scp ark:- |" ark:- | latgen-faster-mapped --min-active=200 --max-active=7000 --max-mem=50000000 --beam=13.0 --lattice-beam=8.0 --acoustic-scale=0.2 --allow-partial=true --word-symbol-table=exp/tri3/graph/words.txt exp/dnn4_pretrain-dbn_dnn/final.mdl exp/tri3/graph/HCLG.fst ark:- "ark:|gzip -c > exp/dnn4_pretrain-dbn_dnn/decode_test/lat.20.gz" 
+# Started at Wed Oct 21 09:43:43 CEST 2020
+#
+nnet-forward: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-nnet.so)
+nnet-forward: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-cudamatrix.so)
+nnet-forward: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-hmm.so)
+nnet-forward: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-tree.so)
+nnet-forward: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-matrix.so)
+nnet-forward: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-base.so)
+latgen-faster-mapped: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-decoder.so)
+latgen-faster-mapped: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-lm.so)
+latgen-faster-mapped: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-fstext.so)
+latgen-faster-mapped: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-hmm.so)
+latgen-faster-mapped: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-transform.so)
+latgen-faster-mapped: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-gmm.so)
+latgen-faster-mapped: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-tree.so)
+latgen-faster-mapped: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-matrix.so)
+latgen-faster-mapped: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-base.so)
+# Accounting: time=0 threads=1
+# Ended (code 1) at Wed Oct 21 09:43:43 CEST 2020, elapsed time 0 seconds

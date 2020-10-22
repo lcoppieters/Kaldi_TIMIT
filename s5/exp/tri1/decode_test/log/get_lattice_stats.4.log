@@ -1,0 +1,9 @@
+# Running on lentix02
+# Started at Mon Oct 19 19:25:29 CEST 2020
+# ali-to-phones --write-lengths=true exp/tri1/decode_test/../final.mdl "ark:gunzip -c exp/tri1/decode_test/ali_tmp.4.gz|" ark,t:- | perl -ne 'chomp;s/^\S+\s*//;@a=split /\s;\s/, # ;{"begin ".[/idiap/resource/software/sge/8.1.9.si/grid/spool/lentix02/job_scripts/5273716]."\n"}++;
+  if(@a>1){{"end ".[-1]."\n"}++;}for(=0;<@a;++){{"all ".[]."\n"}++;}
+  END{for  (sort keys %count){print "{} "}}' | gzip -c > exp/tri1/decode_test/phone_stats.4.gz 
+ali-to-phones --write-lengths=true exp/tri1/decode_test/../final.mdl 'ark:gunzip -c exp/tri1/decode_test/ali_tmp.4.gz|' ark,t:- 
+LOG (ali-to-phones[5.5.810~1-76a979]:main():ali-to-phones.cc:134) Done 40 utterances.
+# Accounting: time=0 threads=1
+# Finished at Mon Oct 19 19:25:29 CEST 2020 with status 0

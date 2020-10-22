@@ -1,0 +1,7 @@
+# Running on lentix04
+# Started at Mon Oct 19 19:26:14 CEST 2020
+# ali-to-phones --per-frame=true exp/tri1/decode_test/../final.mdl "ark:gunzip -c exp/tri1/decode_test/ali_tmp.*.gz|" "ark,t:|gzip -c >exp/tri1/decode_test/ali_frame_tmp.gz" 
+ali-to-phones --per-frame=true exp/tri1/decode_test/../final.mdl 'ark:gunzip -c exp/tri1/decode_test/ali_tmp.*.gz|' 'ark,t:|gzip -c >exp/tri1/decode_test/ali_frame_tmp.gz' 
+LOG (ali-to-phones[5.5.810~1-76a979]:main():ali-to-phones.cc:134) Done 192 utterances.
+# Accounting: time=0 threads=1
+# Finished at Mon Oct 19 19:26:14 CEST 2020 with status 0

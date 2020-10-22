@@ -1,0 +1,6 @@
+# Running on vgne035
+# Started at Tue Oct 20 09:48:44 CEST 2020
+# mkdir exp/tri2/decode_test/score_7 ; cat exp/tri2/decode_test/scoring/7.ctm | utils/int2sym.pl -f 5 exp/tri2/graph/words.txt | local/timit_norm_trans.pl -i - -m conf/phones.60-48-39.map -from 48 -to 39 > exp/tri2/decode_test/scoring/7.ctm_39phn 
+mkdir: cannot create directory 'exp/tri2/decode_test/score_7': File exists
+# Accounting: time=1 threads=1
+# Finished at Tue Oct 20 09:48:45 CEST 2020 with status 0

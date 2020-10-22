@@ -1,0 +1,5 @@
+# Running on keskonrix08
+# Started at Mon Oct 19 19:31:14 CEST 2020
+# mkdir exp/tri1/decode_test/score_7 ; cat exp/tri1/decode_test/scoring/7.ctm | utils/int2sym.pl -f 5 exp/tri1/graph/words.txt | local/timit_norm_trans.pl -i - -m conf/phones.60-48-39.map -from 48 -to 39 > exp/tri1/decode_test/scoring/7.ctm_39phn 
+# Accounting: time=0 threads=1
+# Finished at Mon Oct 19 19:31:14 CEST 2020 with status 0

@@ -1,0 +1,16 @@
+# Running on vgnd016
+# Started at Tue Oct 20 10:45:51 CEST 2020
+# ali-to-phones --write-lengths=true exp/tri2/decode_test/../final.mdl "ark:gunzip -c exp/tri2/decode_test/ali_tmp.3.gz|" ark,t:- | perl -ne 'chomp;s/^\S+\s*//;@a=split /\s;\s/, # ;{"begin ".[/idiap/resource/software/sge/8.1.9.si/grid/spool/vgnd016/job_scripts/5280733]."\n"}++;
+  if(@a>1){{"end ".[-1]."\n"}++;}for(=0;<@a;++){{"all ".[]."\n"}++;}
+  END{for  (sort keys %count){print "{} "}}' | gzip -c > exp/tri2/decode_test/phone_stats.3.gz 
+ali-to-phones: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-decoder.so)
+ali-to-phones: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-lm.so)
+ali-to-phones: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-fstext.so)
+ali-to-phones: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-hmm.so)
+ali-to-phones: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-transform.so)
+ali-to-phones: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-gmm.so)
+ali-to-phones: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-tree.so)
+ali-to-phones: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-matrix.so)
+ali-to-phones: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.27' not found (required by /remote/idiap.svm/group.speech/local/kaldi/src/lib/libkaldi-base.so)
+# Accounting: time=0 threads=1
+# Finished at Tue Oct 20 10:45:51 CEST 2020 with status 0
